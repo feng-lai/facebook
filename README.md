@@ -1,58 +1,58 @@
-# Facebook 爬虫使用说明
+#Facebook crawler usage instructions
 
-## 1. 安装依赖库
+## 1. Install dependency libraries
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 2. 配置 `facebook.py`
+## 2. Configure ` facebook.exe`
 
-### 填写账号密码
-在代码的指定位置填写您的 Facebook 账号和密码：
+###Fill in account password
+Fill in your Facebook account and password at the designated location in the code:
 
 ```python
-# 示例代码（替换引号内的内容）
+#Example code (replace the content within quotation marks)
 username = "your_username"
 password = "your_password"
 ```
 
-### 替换小组链接
-将代码中的链接替换为您要爬取的目标小组链接：
+###Replace group link
+Replace the link in the code with the target group link you want to crawl:
 
 ```python
-# 示例代码（替换为实际小组链接）
-group_url = "https://www.facebook.com/groups/your_target_group"
+#Example code (replace with actual group link)
+group_url = " https://www.facebook.com/groups/your_target_group "
 ```
 
-### 设置爬取数量（可选）
-如果需要限制爬取的数据量，修改以下两处的数字：
+###Set crawling quantity (optional)
+If you need to limit the amount of data crawled, modify the following two numbers:
 
 ```python
-# 示例代码（修改数字为所需数量）
+#Example code (modify the number to the required quantity)
 while len(data) < 98:
 ```
 ```python
-# 示例代码（修改数字为所需数量）
+#Example code (modify the number to the required quantity)
 if len(data) >= 98:
 ```
 
-## 3. 处理手动操作情况
+## 3. Handling manual operation situations
 
-### 弹窗关闭
-如果出现以下弹窗，请手动点击关闭：
-[![1.png](https://i.postimg.cc/Gt1LCdJn/1.png)](https://postimg.cc/2b2RdpK0)
-[![2.png](https://i.postimg.cc/9FbW63Ds/2.png)](https://postimg.cc/F7f5SBgx)
+###Pop up window closed
+If the following pop-up appears, please manually click to close:
+[![1.png]( https://i.postimg.cc/Gt1LCdJn/1.png )]( https://postimg.cc/2b2RdpK0 )
+[![2.png]( https://i.postimg.cc/9FbW63Ds/2.png )]( https://postimg.cc/F7f5SBgx )
 
-### 刷新页面
-如果出现页面加载问题，请手动点击刷新：
-[![3.png](https://i.postimg.cc/CKBSnzcV/3.png)](https://postimg.cc/v1sppHRP)
+###Refresh page
+If there is a page loading issue, please manually click refresh:
+[![3.png]( https://i.postimg.cc/CKBSnzcV/3.png )]( https://postimg.cc/v1sppHRP )
 
-### 验证码处理
-如果遇到图片验证码，请按页面提示填写，程序会继续运行不会退出。
+###Verification code processing
+If you encounter an image verification code, please fill it out according to the prompts on the page, and the program will continue to run without exiting.
 
-## 4. 完成提示
-当看到以下输出时表示爬取完成：
+## 4. Complete prompt
+When the following output is seen, it indicates that crawling is complete:
 ```python
 "Data saved to .......csv"
 ```
